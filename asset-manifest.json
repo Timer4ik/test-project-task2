@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.34e378b1.css",
-    "main.js": "/static/js/main.aa4382c0.js",
-    "static/media/mobileBg.png": "/static/media/mobileBg.4a08d85ad23542eeb612.png",
-    "index.html": "/index.html",
-    "static/media/red-ball.svg": "/static/media/red-ball.ccb699346391e97a36b7.svg",
-    "static/media/purple-ball.svg": "/static/media/purple-ball.ba7b2abc9260e3a779a0.svg",
-    "static/media/red-small-ball.svg": "/static/media/red-small-ball.5ccd01ee99fd2952fd3d.svg",
-    "main.34e378b1.css.map": "/static/css/main.34e378b1.css.map",
-    "main.aa4382c0.js.map": "/static/js/main.aa4382c0.js.map"
+    "main.css": "./static/css/main.34e378b1.css",
+    "main.js": "./static/js/main.aa4382c0.js",
+    "static/media/mobileBg.png": "./static/media/mobileBg.4a08d85ad23542eeb612.png",
+    "index.html": "./index.html",
+    "static/media/red-ball.svg": "./static/media/red-ball.ccb699346391e97a36b7.svg",
+    "static/media/purple-ball.svg": "./static/media/purple-ball.ba7b2abc9260e3a779a0.svg",
+    "static/media/red-small-ball.svg": "./static/media/red-small-ball.5ccd01ee99fd2952fd3d.svg",
+    "main.34e378b1.css.map": "./static/css/main.34e378b1.css.map",
+    "main.aa4382c0.js.map": "./static/js/main.aa4382c0.js.map"
   },
   "entrypoints": [
     "static/css/main.34e378b1.css",
