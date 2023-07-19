@@ -1,0 +1,107 @@
+@import "./null.scss";
+@import "./mixins.scss";
+
+body {
+    background-color: #0e1014;
+    font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1160px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.purple-smooth-ball {
+    position: absolute;
+    top: 0px;
+    left: 60%;
+    transform: translate(0, -10%);
+
+    width: 60px;
+    height: 60px;
+    background: url("../../public/img/purple-ball.svg");
+    background-repeat: no-repeat;
+
+    filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
+    @include mobileMedia {
+        display: none;
+     }
+}
+.purple-light {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -60%);
+
+    width: 259px;
+    height: 259px;
+    border-radius: 259px;
+    opacity: 0.5;
+    background: #833ab4;
+    filter: blur(196px);
+
+    @include mobileMedia {
+       display: none;
+    }
+}
+.red-ball {
+    position: absolute;
+    left: 40%;
+    top: 83px;
+
+    width: 83px;
+    height: 83px;
+    background: url("../../public/img/red-ball.svg");
+    background-repeat: no-repeat;
+
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+    @include mobileMedia {
+        display: none;
+     }
+}
+.red-smooth-ball {
+    position: absolute;
+    left: 60%;
+    top: 547px;
+    
+    width: 28px;
+    height: 28px;
+    background: url("../../public/img/red-small-ball.svg");
+    background-repeat: no-repeat;
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
+    
+    @include mobileMedia {
+        display: none;
+     }
+}
+.red-light {
+    position: absolute;
+    left: 0;
+    top: 250px;
+    transform: translate(-20%, 0);
+
+    width: 311px;
+    height: 311px;
+    border-radius: 311px;
+    opacity: 0.5;
+    background: #961a1a;
+    filter: blur(196px);
+    @include mobileMedia {
+        display: none;
+     }
+}
+
+@import "./base/header.scss";
+@import "./base/footer.scss";
+@import "./pages/welbex.scss";

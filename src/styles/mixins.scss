@@ -1,0 +1,31 @@
+/* SMARTPHONES PORTRAIT */
+
+@mixin mobileMedia() {
+  @media only screen and (max-width: 380px) {
+      @content;
+  }
+}
+
+@mixin smallTabletMedia() {
+  @media only screen and (max-width: 600px) {
+      @content;
+  }
+}
+
+@mixin tabletMedia() {
+  @media only screen and (max-width: 768px) {
+      @content;
+  }
+}
+
+@mixin microDesktopMedia() {
+  @media only screen and (max-width: 900px) {
+      @content;
+  }
+}
+
+@mixin smallDesktopMedia() {
+  @media only screen and (max-width: 1080px) {
+      @content;
+  }
+}

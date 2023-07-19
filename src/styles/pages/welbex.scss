@@ -1,0 +1,169 @@
+.welbex {
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 60px;
+    @include mobileMedia {
+        background: url("../../../public/img/mobileBg.png");
+        background-size: cover;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        @include smallTabletMedia {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__left {
+        width: 362px;
+        margin-top: 90px;
+        @include smallTabletMedia {
+            width: 100%;
+        }
+        @include mobileMedia {
+            margin-top: 40px;
+        }
+        .left__title {
+            color: #e4e5ea;
+            font-size: 48px;
+            @include tabletMedia {
+                font-size: 38px;
+            }
+            @include mobileMedia {
+                font-size: 36px;
+            }
+        }
+        .left__subtitle {
+            color: #e4e5ea;
+            font-size: 48px;
+            font-weight: 900;
+            display: inline;
+
+            background: linear-gradient(to right, #fcb045, #ff3f78);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            @include tabletMedia {
+                font-size: 38px;
+            }
+            @include mobileMedia {
+                font-size: 36px;
+            }
+        }
+        .left__text {
+            width: 275px;
+
+            margin-top: 30px;
+            color: #e4e5ea;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            @include mobileMedia {
+                font-size: 18px;
+                margin-top: 15px;
+            }
+        }
+    }
+    &__right {
+        width: 300px;
+        margin-top: 104px;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+
+        @include smallTabletMedia {
+            text-align: left;
+            width: 100%;
+            margin-top: 50px;
+        }
+        @include mobileMedia {
+            margin-top: 45px;
+        }
+        .right__title {
+            width: 290px;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            .title__gradient {
+                font-weight: bold;
+                text-transform: uppercase;
+                background: linear-gradient(to right, #fcb045, #fd1d1d);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+            @include tabletMedia {
+                font-size: 16px;
+            }
+        }
+        .right__gifts.desktop {
+            @include mobileMedia {
+                display: none;
+            }
+        }
+        .right__gifts.mobile {
+            display: none;
+            @include mobileMedia {
+                display: grid;
+            }
+        }
+        .right__gifts {
+            margin-top: 41px;
+            display: flex;
+            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            color: white;
+            @include mobileMedia {
+                gap: 10px;
+                margin-top: 20px;
+            }
+            .item__title {
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+                @include tabletMedia {
+                    font-size: 16px;
+                }
+                @include mobileMedia {
+                    font-size: 13px;
+                    font-family: Montserrat;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+            }
+            .gradient {
+                display: block;
+                width: 10px;
+                height: 1px;
+                background: linear-gradient(to right, #fcb045, #fd1d1d);
+                @include mobileMedia {
+                    font-size: 22px;
+                    font-family: Montserrat;
+                }
+            }
+            .item__text {
+                font-size: 16px;
+                font-weight: normal;
+                margin-top: 6px;
+                font-family: Montserrat;
+                @include tabletMedia {
+                    font-size: 14px;
+                }
+            }
+        }
+        .button__consult {
+            margin-top: 61px;
+            font-weight: 500;
+            padding: 21px 35px;
+            background-color: #4077f3;
+            color: white;
+            @include mobileMedia {
+                display: none;
+            }
+        }
+    }
+}
